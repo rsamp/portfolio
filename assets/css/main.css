@@ -112,30 +112,6 @@
 		.live-button, .github-button {
 			bottom: 35px;
 		}
-
-		/*.project-buttons {
-			display: block;
-			position: absolute;
-			margin: auto;
-			z-index: 1;
-			float: left;
-			width: inherit;
-		}*/
-
-		/*.live-button, .github-button {
-			position: relative;
-			border: 1px solid white;
-			padding: 5px;
-			border-radius: 5px;
-			right: 20px;
-			bottom: 20px;
-		}*/
-
-		/*.github-button {
-			position: relative;
-			left: 170px;
-		}*/
-
 	}
 
 	@media screen and (min-width: 737px) and (max-width: 1200px) {
@@ -165,28 +141,6 @@
 		.live-button, .github-button {
 			bottom: 30px;
 		}
-
-		/*.project-buttons {
-			display: block;
-			position: absolute;
-			margin: auto;
-			z-index: 1;
-		}*/
-
-		/*.live-button, .github-button {
-			position: relative;
-			border: 1px solid white;
-			padding: 5px;
-			border-radius: 5px;
-			right: 22px;
-			bottom: 20px;
-		}*/
-
-		/*.github-button {
-			position: relative;
-			left: 123px;
-		}*/
-
 	}
 
 	@media screen and (max-width: 736px) {
@@ -217,30 +171,9 @@
 			bottom: 30px;
 		}
 
-		/*.project-buttons {
-			display: block;
-			position: absolute;
-			/*width: 100%;*/
-			/*margin: auto;
-			z-index: 1;*/
-			/*float: left;*/
-			/*width: inherit;*/
-		/*}*/
-
-		/*.live-button, .github-button {
-			position: relative;
-			border: 1px solid white;
-			padding: 5px;
-			border-radius: 5px;
-			/*margin: auto;*/
-			/*right: 10px;
-			bottom: 15px;*/
-		/*}*/
-
-		/*.github-button {
-			position: relative;
-		}*/
-
+		.project {
+			padding: 10px !important;
+		}
 	}
 
 /* Grid */
