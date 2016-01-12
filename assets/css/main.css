@@ -2172,8 +2172,6 @@
 	display: block;
 	width: 50%;
 	float: left;
-	/*border-radius: 5px;*/
-	/*bottom: 30px;*/
 	text-decoration: none;
 	text-shadow: 0;
 	color: #3e3e3e;
@@ -2186,8 +2184,11 @@
 .chess{
 	width: 100%;
 	border-left: 1px solid #888;
-	/*right: 20px;*/
-	/*float: right;*/
+}
+
+.social h4 {
+	margin-bottom: 0px;
+	margin-top: 10px;
 }
 
 /*.project-buttons .dark {
