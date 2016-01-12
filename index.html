@@ -11,10 +11,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="mailer.js"></script>
-
-
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -61,16 +57,59 @@
 			<div class="wrapper style2">
 				<article id="work">
 					<header>
-						<h2>Here's all the stuff I do.</h2>
-						<p>Odio turpis amet sed consequat eget posuere consequat.</p>
+						<h2>Skills and Technologies</h2>
+						<!-- <p>Odio turpis amet sed consequat eget posuere consequat.</p> -->
 					</header>
 					<div class="container">
 						<div class="row">
 							<div class="12u 12u(mobile)">
 								<section class="box style1">
-									<span class="icon featured fa-comments-o"></span>
-									<h3>Consequat lorem</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+									<span class="skill">
+										<img class="skill-image" src="./images/ruby.png" alt="ruby" />
+										<br>
+										<label for="">Ruby</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/rails.png" alt="rails" />
+										<br>
+										<label for="">Rails</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/javascript.png" alt="javascript" />
+										<br>
+										<label for="">JavaScript</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/react.png" alt="react" />
+										<br>
+										<label for="">React</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/jquery.png" alt="jquery" />
+										<br>
+										<label for="">jQuery</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/html5.png" alt="html5" />
+										<br>
+										<label for="">HTML5</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/css3.png" alt="css3" />
+										<br>
+										<label for="">CSS3</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/postgresql.png" alt="postgresql" />
+										<br>
+										<label for="">PostgreSQL</label>
+									</span>
+									<span class="skill">
+										<img class="skill-image" src="./images/git.png" alt="git" />
+										<br>
+										<label for="">Git</label>
+									</span>
+									<!-- <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p> -->
 								</section>
 							</div>
 							<!-- <div class="4u 12u(mobile)">
@@ -101,28 +140,40 @@
 				<article id="portfolio">
 					<header>
 						<h2>Projects</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p>
+						<!-- <p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p> -->
 					</header>
 					<div class="container">
 						<div class="row">
 							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/HuskyNOM.png" alt="" /></a>
-									<h3><a href="#">HuskyNOM.com</a></h3>
-									<p style="font-size: smaller">Inspired by Yelp, focused around my alma mater</p>
+								<article class="box project">
+									<a class="project image featured"><img src="images/HuskyNOM.png" alt="" /></a>
+									<div class="project-buttons">
+										<a class="live-button" target="_blank" href="http://www.huskynom.com">Live Demo</a>
+										<a class="github-button" target="_blank" href="https://github.com/rsamp/HuskyNOM" >GitHub</a>
+									</div>
+									<h3>HuskyNOM.com</h3>
+									<p style="font-size: smaller">Yelp inspired, focused near my alma mater</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/OsmoVirus.png" alt="" /></a>
-									<h3><a href="#">OsmoVirus</a></h3>
+								<article class="box project">
+									<a class="project image featured"><img src="images/OsmoVirus.png" alt="" /></a>
+									<div class="project-buttons">
+										<a class="live-button" target="_blank" href="./OsmoVirus/osmovirus.html" >Live Demo</a>
+										<a class="github-button" target="_blank" href="https://github.com/rsamp/OsmoVirus" >GitHub</a>
+									</div>
+									<h3>OsmoVirus</h3>
 									<p>Swallow the Virus before it gets you</p>
 								</article>
 							</div>
 							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/chessLogo2.png" alt="" /></a>
-									<h3><a href="#">Chess</a></h3>
+								<article class="box project">
+									<a class="project image featured"><img src="images/chessLogo2.png" alt="" /></a>
+									<div class="project-buttons">
+										<!-- <a class="live-button" style="visibility: hidden">Live Demo</a> -->
+										<a class="github-button chess" target="_blank" href="https://github.com/rsamp/chess">GitHub</a>
+									</div>
+									<h3>Chess</h3>
 									<p>Terminal-based Chess game</p>
 								</article>
 							</div>
@@ -170,7 +221,9 @@
 							<div class="12u">
 								<div id="form-messages"></div>
 
-								<form id="ajax-contact" method="post" action="mailer.php">
+								<form method="post" action="http://formspree.io/rsamp@ryansamp.com">
+									<input type="text" name="_gotcha" style="display:none" />
+									<input type="hidden" name="_next" value="./thanks.html" />
 									<div>
 										<div class="row">
 											<div class="6u 12u(mobile)">
@@ -182,7 +235,7 @@
 										</div>
 										<div class="row">
 											<div class="12u">
-												<input type="text" name="subject" id="subject" placeholder="Subject" required/>
+												<input type="text" name="_subject" id="subject" placeholder="Subject" required/>
 											</div>
 										</div>
 										<div class="row">
